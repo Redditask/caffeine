@@ -7,8 +7,7 @@ import * as process from 'process';
 export class CaffeineService {
   constructor(private readonly httpService: HttpService) {}
 
-  //@Cron(CronExpression.EVERY_30_SECONDS) // for check
-  @Cron('0 */20 * * * *')
+  @Cron(CronExpression.EVERY_10_MINUTES)
   async caffeine() {
     const caffeineResult = await this.httpService.axiosRef.get(
       `${process.env.SERVICE_URL}/`,

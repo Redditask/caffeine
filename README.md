@@ -17,24 +17,15 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## To start
+
+```
+You need to add .env file in root directory (see example in .example)
+```
+
 ## Test
 
 ```bash
 # unit tests
 $ npm run test
 ```
-
-## Migrations
-
-```bash
-# Create a migration
-$ npm run migration:create --name=foo
-
-# Generate a migration from schema changes
-$ npm run migration:generate --name=bar
-
-# Run migrations and checks for schema changes
-$ npm run migration:run
-
-# Revert migrations
-$ npm run migration:revert
